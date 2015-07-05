@@ -3,6 +3,25 @@ html {
 }
 body {
   margin: 0;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  align-items: center;
+  -webkit-align-items: center;
+  align-content: center;
+  -webkit-align-content: center;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  
+}
+html, body {
+  height: 100%;
+}
+div {
+  height: 50%;
 }
 .bold {
   font-weight: bold;
@@ -16,25 +35,27 @@ h1 {
 h2 {
   font-size: 36px;
 }
+.words {
+  height: 50%;
+}
 #submit {
   width: 90%;
 }
-.img-crossfade {
-  position: absolute;
-}
 .img-crossfade.bottom {
   z-index: -1;
+  position: relative;
+  height: 200%;
+  width: auto;
 }
 .img-crossfade.top {
   z-index: 1;
   opacity: 1;
   transition-property: opacity;
   transition-duration: 0.5s;
+  position: absolute;
+  height: 50%;
+  width: auto;
 }
 .img-crossfade.top:hover {
   opacity: 0;
-}
-img {
-  max-height: 50vh;
-  width: auto;
 }
