@@ -1,61 +1,47 @@
+@media only screen and (min-width: 62em) {
+  html {
+    font-size: 1.75em;
+  }
+}
+@media only screen and (max-width: 61em) {
+  html {
+    font-size: 1.2em;
+  }
+}
 html {
   font-family: "Myriad Pro", sans-serif;
 }
 body {
   margin: 0;
+}
+
+/* slides */
+.slide-1.slide-container {
+  background-image: url("/resources/img/1.jpg");
+  background-size: cover;
+  overflow: hidden;
+  height: 90vh;
+}
+.slide-1.slide-content {
+  margin-top: 20vh;
+  position: static;
+}
+.slide-2.slide-container {
+  background-color: blanchedalmond;
+  height: auto;
+}
+
+/* element styling */
+h1 {
+  font-size: 5em;
+}
+
+/* utility classes */
+.center-child {
   display: flex;
-  display: -webkit-flex;
-  flex-direction: row;
-  -webkit-flex-direction: row;
+  justify-content: center;
   align-items: center;
-  -webkit-align-items: center;
-  align-content: center;
-  -webkit-align-content: center;
-  justify-content: space-between;
-  -webkit-justify-content: space-between;
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  
-}
-html, body {
-  height: 100%;
-}
-div {
-  height: 50%;
 }
 .bold {
   font-weight: bold;
-}
-p {
-  font-size: 24px;
-}
-h1 {
-  font-size: 48px;
-}
-h2 {
-  font-size: 36px;
-}
-.words {
-  height: 50%;
-}
-#submit {
-  width: 90%;
-}
-.img-crossfade.bottom {
-  z-index: -1;
-  position: relative;
-  height: 200%;
-  width: auto;
-}
-.img-crossfade.top {
-  z-index: 1;
-  opacity: 1;
-  transition-property: opacity;
-  transition-duration: 0.5s;
-  position: absolute;
-  height: 50%;
-  width: auto;
-}
-.img-crossfade.top:hover {
-  opacity: 0;
 }

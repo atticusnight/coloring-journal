@@ -7,23 +7,37 @@
     <title>Coloring Journal</title>
   </head>
   <body>
-    <div class="row">
-      <div class="col-xs-12 col-sm-4">
-        <img class="img-crossfade top" src="/resources/img/1.jpg" />
-        <img class="img-crossfade bottom" src="/resources/img/2.jpg" />
+    <div class="slide-1 slide-container" data-start="background-position:50% 0vh;" data-top-bottom="background-position:50% 5vh;">
+      <div class="slide-1 row">
+        <div class="slide-1 slide-content col-xs-12 center-xs" data-start="opacity:1;transform:translateY(0vh);" data-top-bottom="opacity:0;transform:traslateY(-20vh);">
+          <h1>Coloring Journal</h1>
+          <br>
+          <h2>A place to color, write + paste</h2>
+        </div>
       </div>
-      <div class="col-xs-12 col-sm-8 words">
+    </div>
+    <div class="slide-2 slide-container">
+      <div class="slide-2 row center-child">
+        <div class="slide-2 slide-content col-xs-12 col-md-8 center-child">
+          <p>The surging popularity of grown-up coloring books joined forces with Trina’s natural instinct to create, and the results are shown in every page of Color Write + Paste. A vellum pocket attached inside the front cover holds handpicked ephemera, perfect inspiration for both long-time mixed-media lovers and those just discovering the medium. This 40 page book is the place to capture your memories and celebrate your imagination. “I invite <span class="bold">you</span> to color, write and paste with me.”</p>
+        </div> 
+      </div>
+    </div>
+    <!--<div class="row">
+      <div class="col-xs-12 col-md-4">
+        <img src="/resources/img/1.jpg" />
+      </div>
+      <div class="col-xs-12 col-md-8">
         <h1>Coloring Journal</h1>
         <h2>A place to color, write + paste</h2>
         <p>The surging popularity of grown-up coloring books joined forces with Trina’s natural instinct to create, and the results are shown in every page of Color Write + Paste. A vellum pocket attached inside the front cover holds handpicked ephemera, perfect inspiration for both long-time mixed-media lovers and those just discovering the medium. This 40 page book is the place to capture your memories and celebrate your imagination. “I invite <span class="bold">you</span> to color, write and paste with me.”</p>
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-sm-4">
-        <img class="img-crossfade top" src="/resources/img/3.jpg" />
-        <img class="img-crossfade bottom" src="/resources/img/4.jpg" />
+      <div class="col-xs-12 col-md-4">
+        <img src="/resources/img/3.jpg" />
       </div>
-      <div class="col-xs-12 col-sm-8 words">
+      <div class="col-xs-12 col-md-8">
         <h1>Begin <span class="bold">your</span> creative journey</h1>
         <h2>Join the waiting list</h2>
         <form>
@@ -42,7 +56,10 @@
           </fieldset>
         </form>
       </div>
-    </div>
+    </div>-->
+    <link rel="stylesheet" href="/resources/css/flexboxgrid.min.css" />
     <link rel="stylesheet" href="/resources/css/main.css" />
+    <script src="/resources/js/skrollr.min.js"></script>
+    <script>var s = skrollr.init();</script>
   </body>
 </html>
