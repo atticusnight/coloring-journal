@@ -17,7 +17,7 @@ body {
 
 /* slides */
 .slide-1.slide-container {
-  background-image: url("/resources/img/1.jpg");
+  background-image: url("/resources/img/4.jpg");
   background-size: cover;
   overflow: hidden;
   height: 90vh;
@@ -27,8 +27,24 @@ body {
   position: static;
 }
 .slide-2.slide-container {
-  background-color: blanchedalmond;
+  background-color: #ffffff;
   height: auto;
+}
+.slide-2.row {
+  margin-right: 0px;
+}
+/*(.slide-3.slide-container {
+  background-image: url("/resources/img/2.jpg");
+  background-size: cover;
+  overflow: hidden;
+  height: 30vh;
+}*/
+.slide-3 img {
+  height: auto;
+  max-width: 100%;
+}
+.slide-3.col-md-4 {
+  padding: 0px;
 }
 
 /* element styling */
