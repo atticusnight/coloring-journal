@@ -1,0 +1,27 @@
+{
+  "name": "coloring-journal",
+  "version": "1.0.0",
+  "description": "http://coloringjournal.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atticusnight/coloring-journal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/atticusnight/coloring-journal/issues"
+  },
+  "homepage": "https://github.com/atticusnight/coloring-journal",
+  "devDependencies": {
+    "autoprefixer-core": "^5.2.1",
+    "cssnano": "^2.4.0",
+    "grunt": "^0.4.5",
+    "grunt-concurrent": "^2.0.1",
+    "grunt-contrib-imagemin": "^0.9.4",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-postcss": "^0.5.5",
+    "grunt-shell": "^1.1.2",
+    "load-grunt-tasks": "^3.2.0",
+    "pixrem": "^1.3.1",
+    "split2": "^1.0.0",
+    "through2": "^2.0.0"
+  }
+}
