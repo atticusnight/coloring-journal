@@ -77,3 +77,7 @@ h2 {
   margin-right: 0px;
   margin-left: 0px;
 }
+a {
+  color: black;
+  text-decoration: none;
+}
