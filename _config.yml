@@ -1,0 +1,8 @@
+# Site settings
+title: Coloring Journal
+email: trina@jubileeflea.com
+baseurl: ""
+url: "http://coloringjournal.com" # the base hostname & protocol for your site
+markdown: redcarpet
+highlighter: pygments
+exclude: [src, coloring journal web.pdf, CNAME, node_modules, README, package.json]

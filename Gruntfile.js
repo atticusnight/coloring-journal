@@ -36,16 +36,26 @@ grunt.initConfig({
       command: 'cp -R src/js/ resources/js/'
     },
     jekyllServe: {
-      command: 'jekyll serve --host 0.0.0.0 --safe --no-watch'
+      command: 'jekyll serve --watch --safe --host 0.0.0.0'
     }
   },
   watch: {
-    files: ['src/**/**.*', 'index.html'],
-    tasks: ['default']
+    css: {
+      files: ['src/css/*.css'],
+      tasks: ['postcss']
+    },
+    js: {
+      files: ['src/js/*.js'],
+      tasks: ['shell:copyJs']
+    },
+    img: {
+      files: ['src/**/*.{jpg,png,gif}'],
+      tasks: ['imagemin']
+    }
   },
   concurrent: {
     target: {
-      tasks: ['shell:jekyllServe', 'watch'],
+      tasks: ['watch', 'shell:jekyllServe'],
       options: {
         logConcurrentOutput: true
       }
@@ -57,4 +67,5 @@ grunt.loadNpmTasks('grunt-contrib-imagemin');
 grunt.loadNpmTasks('grunt-postcss');
 grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.loadNpmTasks('grunt-concurrent');
-grunt.registerTask('default', ['imagemin', 'postcss', 'shell:copyJs', 'concurrent:target']);
+grunt.registerTask('default', ['concurrent:target']);
+grunt.registerTask('lazy', ['imagemin', 'postcss', 'shell:copyJs']);

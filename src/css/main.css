@@ -7,20 +7,11 @@
   html {
     font-size: 1em;
   }
-  .fa {
-    font-size: 1.75em;
-  }
-}
-html {
-  font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
-}
-body {
-  margin: 0;
 }
 
 /* slides */
 .slide-1.slide-container {
-  background-image: url("/resources/img/4.jpg");
+  background-image: url("/resources/img/1.jpg");
   background-size: cover;
   overflow: hidden;
   height: 90vh;
@@ -82,4 +73,15 @@ h2 {
 }
 a {
   color: black;
+}
+html {
+  font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
+}
+body {
+  margin: 0;
+}
+.fa {
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+  padding-top: 0.25em;
 }
