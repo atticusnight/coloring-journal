@@ -49,6 +49,7 @@
 }
 .slide-3 .img-3-3 img {
   border-left: 1px solid black;
+  position-right: 1px;
 }
 .slide-4.slide-container {
   background-color: #fa8a75;
